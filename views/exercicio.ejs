@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Perguntas</title>
+</head>
+<body>
+    <h1>Guia Perguntas</h1>
+    <hr>
+    
+    
+<p>Nome:<%=nome%></p><%# JOGANDO A VARIÁVEL DE JAVASCRIPT DENTRO HTML DA WEB %>
+</p>Linguagem:<%=lang%></p><%# JOGANDO A VARIÁVEL DE JAVASCRIPT DENTRO HTML DA WEB %>
+</p>Empresa:<%=empresa%></p><%# JOGANDO A VARIÁVEL DE JAVASCRIPT DENTRO HTML DA WEB %>
+</p>Número de inscritos:<%=inscritos%></p><%# JOGANDO A VARIÁVEL DE JAVASCRIPT DENTRO HTML DA WEB %>
+<% if(msg == true){%>
+<h3>Isso é uma mensagem de erro!</h3> %# CONDICIONAIS EM EJS %>
+<%}else{%>
+    <h3>Nenhum erro!</h3>
+<%}%>
+
+<% produtos.forEach(function(produto){%> <%# PERCORRENDO UM ARRAY ATRAVÉS DA ESTRUTURA DE LOOP forEach %>
+      <hr>
+      <h4><%= produto.nome%></h4>
+       <h4><%= produto.preco%></h4>
+
+<%})%>
+
+    
+    
+</body>
+</html>
